@@ -1,0 +1,238 @@
+export interface Car {
+  id: string;
+  make: string;
+  model: string;
+  year: number;
+  price: number;
+  mileage: number;
+  color: string;
+  transmission: string;
+  drivetrain: string;
+  engine: string;
+  mpgCity: number;
+  mpgHighway: number;
+  vin: string;
+  stockNumber: string;
+  features: string[];
+  images: string[];
+  location: string;
+  bodyStyle: string;
+  condition: 'Excellent' | 'Good' | 'Fair';
+  daysOnLot: number;
+  certified: boolean;
+}
+
+export const CARS: Car[] = [
+  {
+    id: '1',
+    make: 'Toyota',
+    model: 'Camry',
+    year: 2022,
+    price: 26998,
+    mileage: 18420,
+    color: 'Midnight Black',
+    transmission: 'Automatic',
+    drivetrain: 'FWD',
+    engine: '2.5L 4-Cylinder',
+    mpgCity: 28,
+    mpgHighway: 39,
+    vin: '4T1B11HK0NU123456',
+    stockNumber: 'KM4521',
+    features: ['Apple CarPlay', 'Android Auto', 'Backup Camera', 'Blind Spot Monitor', 'Lane Departure Warning', 'Heated Seats', 'Sunroof', 'Bluetooth'],
+    images: [
+      'https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=800&q=80',
+      'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800&q=80',
+    ],
+    location: 'Atlanta, GA',
+    bodyStyle: 'Sedan',
+    condition: 'Excellent',
+    daysOnLot: 5,
+    certified: true,
+  },
+  {
+    id: '2',
+    make: 'Honda',
+    model: 'CR-V',
+    year: 2023,
+    price: 31495,
+    mileage: 9850,
+    color: 'Sonic Gray Pearl',
+    transmission: 'CVT',
+    drivetrain: 'AWD',
+    engine: '1.5L Turbocharged 4-Cylinder',
+    mpgCity: 28,
+    mpgHighway: 34,
+    vin: '7FARW2H80PE123456',
+    stockNumber: 'KM4892',
+    features: ['Honda Sensing', 'Apple CarPlay', 'Android Auto', 'Sunroof', 'Heated Seats', 'Remote Start', 'Power Liftgate', 'Wireless Charging'],
+    images: [
+      'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&q=80',
+      'https://images.unsplash.com/photo-1617469767246-58e8e0f3d048?w=800&q=80',
+    ],
+    location: 'Atlanta, GA',
+    bodyStyle: 'SUV',
+    condition: 'Excellent',
+    daysOnLot: 3,
+    certified: true,
+  },
+  {
+    id: '3',
+    make: 'Ford',
+    model: 'F-150',
+    year: 2021,
+    price: 38990,
+    mileage: 32100,
+    color: 'Oxford White',
+    transmission: 'Automatic',
+    drivetrain: '4WD',
+    engine: '3.5L V6 EcoBoost',
+    mpgCity: 18,
+    mpgHighway: 24,
+    vin: '1FTEW1EP0MKD12345',
+    stockNumber: 'KM3256',
+    features: ['FordPass Connect', 'SYNC 4', 'Backup Camera', 'Trailer Hitch', 'Bed Liner', 'Tow Package', 'Navigation', 'Satellite Radio'],
+    images: [
+      'https://images.unsplash.com/photo-1583267746897-2cf415887172?w=800&q=80',
+      'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+    ],
+    location: 'Charlotte, NC',
+    bodyStyle: 'Truck',
+    condition: 'Good',
+    daysOnLot: 12,
+    certified: false,
+  },
+  {
+    id: '4',
+    make: 'BMW',
+    model: '3 Series',
+    year: 2022,
+    price: 41500,
+    mileage: 21300,
+    color: 'Alpine White',
+    transmission: 'Automatic',
+    drivetrain: 'RWD',
+    engine: '2.0L Turbocharged 4-Cylinder',
+    mpgCity: 26,
+    mpgHighway: 36,
+    vin: 'WBA5R7C09LFH12345',
+    stockNumber: 'KM5012',
+    features: ['iDrive 7', 'Harman Kardon Audio', 'Sunroof', 'Heated Seats', 'Live Cockpit', 'Parking Assistant', 'Driving Assistant', 'Apple CarPlay'],
+    images: [
+      'https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800&q=80',
+      'https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80',
+    ],
+    location: 'Nashville, TN',
+    bodyStyle: 'Sedan',
+    condition: 'Excellent',
+    daysOnLot: 8,
+    certified: true,
+  },
+  {
+    id: '5',
+    make: 'Tesla',
+    model: 'Model 3',
+    year: 2023,
+    price: 35999,
+    mileage: 12450,
+    color: 'Pearl White Multi-Coat',
+    transmission: 'Single-Speed',
+    drivetrain: 'AWD',
+    engine: 'Dual Motor Electric',
+    mpgCity: 134,
+    mpgHighway: 126,
+    vin: '5YJ3E1EA8PF123456',
+    stockNumber: 'KM5211',
+    features: ['Autopilot', '15" Touchscreen', 'Over-the-Air Updates', 'Supercharger Access', 'Sentry Mode', 'Glass Roof', 'Premium Audio', 'USB-C Ports'],
+    images: [
+      'https://images.unsplash.com/photo-1560958089-b8a1929cea89?w=800&q=80',
+      'https://images.unsplash.com/photo-1571987502227-9231b837d92a?w=800&q=80',
+    ],
+    location: 'Atlanta, GA',
+    bodyStyle: 'Sedan',
+    condition: 'Excellent',
+    daysOnLot: 2,
+    certified: false,
+  },
+  {
+    id: '6',
+    make: 'Chevrolet',
+    model: 'Equinox',
+    year: 2022,
+    price: 24990,
+    mileage: 28700,
+    color: 'Mosaic Black Metallic',
+    transmission: 'Automatic',
+    drivetrain: 'AWD',
+    engine: '1.5L Turbocharged 4-Cylinder',
+    mpgCity: 26,
+    mpgHighway: 31,
+    vin: '3GNAXUEV1NL123456',
+    stockNumber: 'KM4101',
+    features: ['Chevy MyLink', 'Apple CarPlay', 'Android Auto', 'Backup Camera', 'OnStar', 'Remote Start', 'Heated Seats', 'Bluetooth'],
+    images: [
+      'https://images.unsplash.com/photo-1550355291-bbee04a92027?w=800&q=80',
+      'https://images.unsplash.com/photo-1563720223809-b9a3a89faff2?w=800&q=80',
+    ],
+    location: 'Birmingham, AL',
+    bodyStyle: 'SUV',
+    condition: 'Good',
+    daysOnLot: 18,
+    certified: false,
+  },
+  {
+    id: '7',
+    make: 'Jeep',
+    model: 'Wrangler',
+    year: 2021,
+    price: 36750,
+    mileage: 24900,
+    color: 'Firecracker Red',
+    transmission: 'Automatic',
+    drivetrain: '4WD',
+    engine: '3.6L V6',
+    mpgCity: 17,
+    mpgHighway: 23,
+    vin: '1C4HJXFG1MW123456',
+    stockNumber: 'KM3890',
+    features: ['Uconnect 4', 'Off-Road Pages', 'Trail Rated', 'Dana Axles', 'Rock-Trac 4WD', 'Removable Doors', 'Fold-Down Windshield', 'Alpine Audio'],
+    images: [
+      'https://images.unsplash.com/photo-1620065939963-b6e5c5acb68f?w=800&q=80',
+      'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=800&q=80',
+    ],
+    location: 'Memphis, TN',
+    bodyStyle: 'SUV',
+    condition: 'Good',
+    daysOnLot: 9,
+    certified: false,
+  },
+  {
+    id: '8',
+    make: 'Hyundai',
+    model: 'Tucson',
+    year: 2023,
+    price: 28450,
+    mileage: 7200,
+    color: 'Intense Blue',
+    transmission: 'Automatic',
+    drivetrain: 'AWD',
+    engine: '2.5L 4-Cylinder',
+    mpgCity: 26,
+    mpgHighway: 33,
+    vin: '5NMJDCAE0PH123456',
+    stockNumber: 'KM5330',
+    features: ['Bluelink', 'Apple CarPlay', 'Android Auto', 'Panoramic Sunroof', 'Heated & Ventilated Seats', 'Safe Exit Assist', 'Blind Spot Warning', 'Highway Driving Assist'],
+    images: [
+      'https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=800&q=80',
+      'https://images.unsplash.com/photo-1616422285623-13ff0162193c?w=800&q=80',
+    ],
+    location: 'Raleigh, NC',
+    bodyStyle: 'SUV',
+    condition: 'Excellent',
+    daysOnLot: 1,
+    certified: true,
+  },
+];
+
+export const MAKES = [...new Set(CARS.map(c => c.make))].sort();
+export const BODY_STYLES = [...new Set(CARS.map(c => c.bodyStyle))].sort();
+export const LOCATIONS = [...new Set(CARS.map(c => c.location))].sort();
