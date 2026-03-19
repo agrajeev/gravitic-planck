@@ -33,6 +33,100 @@ git --version    # any recent version
 
 ---
 
+## Installing Git (Claude Code Compatible)
+
+Claude Code requires a modern Git installation. Follow the steps for your OS:
+
+### macOS
+
+**Option A — Homebrew (recommended):**
+```bash
+brew install git
+git --version   # verify: git version 2.x.x
+```
+
+**Option B — Xcode Command Line Tools:**
+```bash
+xcode-select --install
+```
+
+### Linux (Ubuntu / Debian)
+
+```bash
+sudo apt update
+sudo apt install git -y
+git --version
+```
+
+### Linux (Fedora / RHEL / CentOS)
+
+```bash
+sudo dnf install git -y   # Fedora/RHEL 8+
+# or
+sudo yum install git -y   # older CentOS/RHEL
+git --version
+```
+
+### Linux (Alpine)
+
+```bash
+apk add git
+git --version
+```
+
+### Windows
+
+**Option A — Git for Windows (required for Claude Code on Windows):**
+1. Download from https://git-scm.com/downloads/win
+2. Run the installer — keep all defaults
+3. Open **Git Bash** or **PowerShell** and verify:
+   ```powershell
+   git --version
+   ```
+
+**Option B — WinGet:**
+```powershell
+winget install Git.Git
+```
+
+**Option C — Scoop:**
+```powershell
+scoop install git
+```
+
+> **Note:** Claude Code on Windows requires Git for Windows. Without it, Claude Code setup will fail.
+
+---
+
+### Configure Git Identity (Required)
+
+After installing Git, set your identity. Claude Code uses these for commits:
+
+```bash
+git config --global user.name  "Your Name"
+git config --global user.email "you@example.com"
+```
+
+Verify your config:
+```bash
+git config --global --list
+```
+
+### Clone This Repo
+
+```bash
+git clone <your-repo-url>
+cd <repo-folder>
+```
+
+To work on the Claude Code branch:
+```bash
+git fetch origin
+git checkout claude/install-claude-code-g2qqS
+```
+
+---
+
 ## How to Run This Project (Clone & Go)
 
 ```bash
